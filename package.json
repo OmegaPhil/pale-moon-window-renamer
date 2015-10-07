@@ -1,9 +1,10 @@
 {
   "name": "window-renamer",
-  "fullName": "window-renamer",
+  "fullName": "Window Renamer",
   "id": "jid1-3uDsafXac6QUxA",
-  "description": "a basic add-on",
+  "description": "Rename browser windows for easy tracking",
   "author": "",
   "license": "GPL3+",
-  "version": "0.1"
+  "version": "0.1",
+  "dependencies": ["menuitems", "addon-sdk"]
 }
