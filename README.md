@@ -16,7 +16,7 @@ Last updated on 23.11.15 for v1.
 Installation
 ============
 
-1. Fetch the latest xpi from the releases branch TODO
+1. Fetch the latest xpi from the [release branch](https://github.com/OmegaPhil/pale-moon-window-renamer/tree/release).
 2. Tools -> Addons, see the button to the left of the search bar -> Install add-on from file -> browse to the xpi and install.
 
 
