@@ -1,62 +1,46 @@
-The Pale Moon window renamer addon allows you to better track your permanent windows - do you have more than 2 windows always open, containing tabs dedicated to different jobs? If yes, you might be interested in this addon's ability to set an individual window's title (not tab titles) to a particular fixed string, that survives a restart.
+Pale Moon Window Renamer Downloads
+==================================
 
-E.g. I use the following fixed window titles:
+This branch contains the addons files directly installable in Pale Moon.
 
-Main - Pale Moon
-Downloading - Pale Moon
-Programming - Pale Moon
-Japanese - Pale Moon
-Wiki - Pale Moon
+Please report any problems on the [issue tracker](https://github.com/OmegaPhil/pale-moon-window-renamer/issues).
 
-Rather than the previous mess of multiple windows titled by whatever tab they happen to be on, I can now find the right window at a glance, and do stuff like using wmctrl to raise the right window bound to a key combination etc.
+To download a file, click on the filename, then click View Raw. **DO NOT**
+right click on a link, as this will save the web page, not the file.
 
-Last updated on 23.11.15 for v1.
+All files are signed with my GPG key - to verify:
 
+1. Install gpg: sudo aptitude install gpg
+2. Fetch my public key: gpg --keyserver keys.gnupg.net --recv-keys 0xFDC2F38F
+3. Confirm that the fingerprint of the key matches (so that you can trust my key): gpg --fingerprint 0xFDC2F38F
 
-Installation
-============
+    E760 95EC DACD 5DEC 7653 A996 17D2 3C7D FDC2 F38F
 
-1. Fetch the latest xpi from the releases branch TODO
-2. Tools -> Addons, see the button to the left of the search bar -> Install add-on from file -> browse to the xpi and install.
+4. Verify the xpi: gpg --verify *.sig
 
+If you haven't imported my key, you'll get this:
 
-Dependencies
-============
+==========================================================================
 
-The addon should be self-contained - it is based on the Addon SDK and has been tested/used with Pale Moon v25.7.2+, although as it appears to be simple it should work with all versions of the browser - if not, please let me know (see Bugs And Feature Requests below) and I'll update this.
+gpg: assuming signed data in `window-renamer_1.0.xpi'
+gpg: Signature made Mon 23 Nov 2015 14:38:35 GMT using RSA key ID FDC2F38F
+gpg: Can't check signature: public key not found
 
+==========================================================================
 
-Uninstallation
-==============
+Otherwise:
 
-Uninstall as you would a normal addon.
+=======================================================================
 
+gpg: assuming signed data in `window-renamer_1.0.xpi'
+gpg: Signature made Mon 23 Nov 2015 14:38:35 GMT using RSA key ID FDC2F38F
+gpg: Good signature from "OmegaPhil <OmegaPhil@startmail.com>"
+gpg:                 aka "OmegaPhil <OmegaPhil@gmail.com>"
+gpg:                 aka "OmegaPhil <OmegaPhil00@startmail.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: E760 95EC DACD 5DEC 7653  A996 17D2 3C7D FDC2 F38F
 
-General Use
-===========
+=======================================================================
 
-Window Renamer adds the 'Rename Window' item to the bottom of your Tools menu:
-
-![Tools menu item](https://github.com/OmegaPhil/pale-moon-window-renamer/blob/master/doc/tools-menu-item.png?raw=true)
-
-Using this pops up the following dialog:
-
-![Rename window dialog](https://github.com/OmegaPhil/pale-moon-window-renamer/blob/master/doc/rename-window-dialog.png?raw=true)
-
-Enter a title or leave blank to get the default title.
-
-The script works by overriding Pale Moon's updateTitlebar function with its own - the original is restored when requested.
-
-Note that disabling this addon is equivalent to uninstalling it - due to a limitation of the AddonSDK, the script can't tell the difference between disabling and uninstalling, therefore if you disable it you will lose your saved window titles.
-
-
-Bugs And Feature Requests
-=========================
-
-Please create an issue on the [Github issue tracker](https://github.com/OmegaPhil/pale-moon-window-renamer/issues).
-
-
-Contact Details
-===============
-
-OmegaPhil@startmail.com
+The warning is due to you not defining the trust level you want to place in my public key that you just imported - the idea is you somehow verify the key in person (or via some other guaranteed route), which isn't really possible - just have to rely on git and TLS here!
