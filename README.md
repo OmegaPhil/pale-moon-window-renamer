@@ -20,17 +20,11 @@ All files are signed with my GPG key - to verify:
 
 If you haven't imported my key, you'll get this:
 
-==========================================================================
-
     gpg: assuming signed data in `window-renamer_1.0.xpi'
     gpg: Signature made Mon 23 Nov 2015 14:38:35 GMT using RSA key ID FDC2F38F
     gpg: Can't check signature: public key not found
 
-==========================================================================
-
 Otherwise:
-
-=======================================================================
 
     gpg: assuming signed data in `window-renamer_1.0.xpi'
     gpg: Signature made Mon 23 Nov 2015 14:38:35 GMT using RSA key ID FDC2F38F
@@ -40,7 +34,5 @@ Otherwise:
     gpg: WARNING: This key is not certified with a trusted signature!
     gpg:          There is no indication that the signature belongs to the owner.
     Primary key fingerprint: E760 95EC DACD 5DEC 7653  A996 17D2 3C7D FDC2 F38F
-
-=======================================================================
 
 The warning is due to you not defining the trust level you want to place in my public key that you just imported - the idea is you somehow verify the key in person (or via some other guaranteed route), which isn't really possible - just have to rely on git and TLS here!
