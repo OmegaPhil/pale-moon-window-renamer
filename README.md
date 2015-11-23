@@ -22,9 +22,9 @@ If you haven't imported my key, you'll get this:
 
 ==========================================================================
 
-gpg: assuming signed data in `window-renamer_1.0.xpi'
-gpg: Signature made Mon 23 Nov 2015 14:38:35 GMT using RSA key ID FDC2F38F
-gpg: Can't check signature: public key not found
+    gpg: assuming signed data in `window-renamer_1.0.xpi'
+    gpg: Signature made Mon 23 Nov 2015 14:38:35 GMT using RSA key ID FDC2F38F
+    gpg: Can't check signature: public key not found
 
 ==========================================================================
 
@@ -32,14 +32,14 @@ Otherwise:
 
 =======================================================================
 
-gpg: assuming signed data in `window-renamer_1.0.xpi'
-gpg: Signature made Mon 23 Nov 2015 14:38:35 GMT using RSA key ID FDC2F38F
-gpg: Good signature from "OmegaPhil <OmegaPhil@startmail.com>"
-gpg:                 aka "OmegaPhil <OmegaPhil@gmail.com>"
-gpg:                 aka "OmegaPhil <OmegaPhil00@startmail.com>"
-gpg: WARNING: This key is not certified with a trusted signature!
-gpg:          There is no indication that the signature belongs to the owner.
-Primary key fingerprint: E760 95EC DACD 5DEC 7653  A996 17D2 3C7D FDC2 F38F
+    gpg: assuming signed data in `window-renamer_1.0.xpi'
+    gpg: Signature made Mon 23 Nov 2015 14:38:35 GMT using RSA key ID FDC2F38F
+    gpg: Good signature from "OmegaPhil <OmegaPhil@startmail.com>"
+    gpg:                 aka "OmegaPhil <OmegaPhil@gmail.com>"
+    gpg:                 aka "OmegaPhil <OmegaPhil00@startmail.com>"
+    gpg: WARNING: This key is not certified with a trusted signature!
+    gpg:          There is no indication that the signature belongs to the owner.
+    Primary key fingerprint: E760 95EC DACD 5DEC 7653  A996 17D2 3C7D FDC2 F38F
 
 =======================================================================
 
